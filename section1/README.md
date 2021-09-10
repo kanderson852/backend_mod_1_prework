@@ -18,7 +18,7 @@ Here's what we ask you do:
 - When you start a new section of pre-work, write down each term. Leave plenty of space for (future) notes
 - As you read and work through the material you will come across definitions and build an understanding of these terms. Write in definitions, draw diagrams, write out relevant code snippets, etc. If you complete a section and don't have a grasp on a term, that's when it's time to reach out to your pre-work small group or cohort, and collaborate!
 
-### Vocabulary Terms
+### Vocabulary Terms: Notes in notebook
 
 - command
 - directory
@@ -32,7 +32,7 @@ Here's what we ask you do:
 - interpolation
 
 
-## Part A Super Learner Habits
+## Part A Super Learner Habits: Notes in notebook
 
 Read [this article](https://pubs.ppai.org/pc-today/six-habits-of-super-learners/) about the habits of Super Learners. Reflect on this - what do you already do? Does this make you want to do anything new or different as you beginthis learning journey? Jot down your notes now, and we will ask you to share some reflections with your small group at the end of this section.
 
@@ -59,26 +59,25 @@ In the following section, you will get a little practice using `touch` and `mkdi
 👩‍💻 Use `mkdir` and `touch` to create the directories/files in the structure illustrated below:
 
 ```sh
-|--secretLibraryProject
-    |
-    |--README.md
-    |--package.json
-    |
-    |--lib
-    |  |
-    |  |--secretLibrary.js
-    |  |--secretBook.js
-    |  |--secretLibrarian.js
-    |  |--patron.js
-    |  |--librarySystem.js
-    |
-    |--test
-       |
-       |--secretLibrary.js
-       |--secretBook.js
-       |--secretLibrarian.js
-       |--patron.js
-       |--librarySystem.js
+|mkdir secretLibraryProject
+    |cd secretLibraryProject
+    |touch README.md
+    |touch package.json
+    |mkdir lib
+    |cd lib
+    |  |touch secretLibrary.js
+    |  |touch secretBook.js
+    |  |touch secretLibrarian.js
+    |  |touch patron.js
+    |  |touch librarySystem.js
+    |cd secretLibraryProject
+    |mkdir test
+       |cd test
+       |touch secretLibrary.js
+       |touch secretBook.js
+       |touch secretLibrarian.js
+       |touch patron.js
+       |touch librarySystem.js
 ```     
 
 Don't worry about putting any text or content into these files. For now, create this structure with empty files.
@@ -102,6 +101,25 @@ Note that in the command provided above, the dashes preceding the directory name
 #### Terminal Practice
 
 👩‍💻 Use `rm` and `rm -rf` to delete each of the files and directories you created in the `Making Things` section above.
+cd secretLibraryProject
+rm README.md
+rm package.json
+cd lib
+rm secretLibrary.js
+rm secretBook.js
+rm secretLibrarian.js
+rm patron.js
+rm librarySystem.js
+rm -rf lib
+cd test
+rm secretLibrary.js
+rm secretBook.js
+rm secretLibrarian.js
+rm patron.js
+rm librarySystem.js
+rm -rf test
+cd secretLibraryProject
+rm- rf secretLibraryProject
 
 Note that it would be possible to delete the entire directory that you created with just `rm -rf secretLibrary`. **Don't do this!** At this point it's better for you to delete each of the files and directories individually so that you get some practice with these commands, which will help you remember them better in the long run. The goal here (for this particular exercise) isn't to be efficient and creating and deleting files and directories, it's to *get practice* creating and deleting files and directories. Ultimately this practice will allow you to be more efficient in the future.
 
@@ -139,7 +157,7 @@ This will open the `section1` directory in Atom. You should be able to see the d
 
 1. Next, you will complete several lessons from the Learn Ruby the Hard Way Tutorial. *For ***each*** lesson* ***follow these directions closely***:
 
-    1. Create a file within your `section1` directory that will contain this lesson's work. Verify that you are within the directory by using terminal command `pwd`. If you are not, `cd` into your `section1` directory. Once you are there, use the `touch` command in your terminal to create a file. For the first lesson, name this file `ex1.rb`. For each subsequent lesson, use `ex2.rb`, `ex3.rb`, so on, so forth. 
+    1. Create a file within your `section1` directory that will contain this lesson's work. Verify that you are within the directory by using terminal command `pwd`. If you are not, `cd` into your `section1` directory. Once you are there, use the `touch` command in your terminal to create a file. For the first lesson, name this file `ex1.rb`. For each subsequent lesson, use `ex2.rb`, `ex3.rb`, so on, so forth.
 
     1. Work through the lesson, **typing** the code into your file, and running it in the terminal with `ruby ex1.rb`, replacing `ex1` with the actual file name of what you'd like to run. Make sure the output you get is similar to what the lesson shows. If you get an error saying "No such file or directory", be sure to verify the directory you are located in via the terminal- running command `ls` should show the file you are trying to run.
 
