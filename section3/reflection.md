@@ -15,22 +15,26 @@ When I got promoted at my job to management, I was not very good at it at first.
 
 1. What is a Hash, and how is it different from an Array?
 
+A Hash is similar to an array in that it stores information in a list format. However, while an array only stores individual values, hashes store pairs of key/values. Similar to a dictionary, the key is the 'word' and the value is the 'definition'.
 
 
 1. In the space below, create a Hash stored to a variable named `pet_store`.  This hash should hold an inventory of items and the number of that item that you might find at a pet store.
 
-
+pet_store = {'dog_food' => 100, 'treats' => 88, 'toys' => 45}
 
 1. Given the following `states = {"CO" => "Colorado", "IA" => "Iowa", "OK" => "Oklahoma"}`, how would you access the value `"Iowa"`?
 
-
+states['IA']
 
 1. With the same hash above, how would we get all the keys?  How about all the values?
 
-
+states.keys
+states.values
 
 1. What is another example of when we might use a hash?  In your example, why is a hash better than an array?
 
-
+A good example of when to use a hash is when storing information to describe something. For example to make a calendar we can use a hash to pair activities with the times they are scheduled for. This example would use a hash rather than an array because the activities/times need to be paired, it doesn't work to just list them out separately.
 
 1. What questions do you still have about hashes?
+
+I don't think I have questions, just feel a little shaky on writing them out so I will be getting more practice on these. 
