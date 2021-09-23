@@ -1,0 +1,14 @@
+1. Create an object in Ruby
+class GoodDog
+end
+Rusko = GoodDog.new
+
+2. A module is a collection of behaviors to be used in classes.
+They can be applied to multiple classes at the same time, allowing
+multiple classes to perform the same function.
+
+module Fetch
+end
+class GoodDog
+  include Fetch
+end
