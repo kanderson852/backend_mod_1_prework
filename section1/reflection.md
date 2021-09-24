@@ -11,7 +11,7 @@
 `print "Hello World!"`
 
 1. What character is used to indicate comments in a ruby file?
- #
+ "#"
 
 1. Explain the difference between an integer and a float?
 
@@ -36,4 +36,4 @@ Interpolation builds strings that contain variables within them
 
 1. Name and describe two common string methods:
 
-One common string method is `.length`. This allows you to print the length of the string that you use it on. Another common string is `.sub` which replaces the specified string with another one. 
+One common string method is `.length`. This allows you to print the length of the string that you use it on. Another common string is `.sub` which replaces the specified string with another one.
