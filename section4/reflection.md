@@ -28,9 +28,11 @@ class Dog
     @breed  = breed
     @name  = name
   end
+
   def fetch
     p "#{name}retrieves the ball"
   end
+
   def dna_test
     p "#{breed} is the dog's breed"
   end
