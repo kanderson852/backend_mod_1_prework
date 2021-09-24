@@ -46,10 +46,9 @@ dog("Jazzy", "12")
 
 
 # Naming is notoriously hard in programming. It is a skill to name a variable or function concisely enough that it is reasonable to type, but descriptive enough that others can infer the meaning.
-
 # Look at the code you wrote for the previous YOU DO🎈 - what did you name the function, and why?
 # What did you name each parameter, and why?
-
 # EXPLAIN:
+
 #I named my function "dog" because it is used to describe different dogs.
 #I named my parameters "name" and "age" because those are the information we are getting about the dogs.
