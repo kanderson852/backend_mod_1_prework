@@ -1,41 +1,67 @@
 # Challenge - See if you can follow the instructions and complete the exercise in under 30 minutes!
 
 # Declare two variables - hero_name AND special_ability - set to strings
-
+hero_name = "Superman"
+special_ability = "flying"
 # Declare two variables - greeting AND catchphrase
 #   greeting should be assigned to a string that uses interpolation to include the hero_name
 #   catchphrase should be assigned to a string that uses interpolation to include the special_ability
 
-# Declare two variables - power AND energy - set to integers
+greeting = "Hello! I am #{hero_name}"
+catchphrase = "There's no need to fear, Superman is here! #{special_ability} helps me save the day!"
 
+# Declare two variables - power AND energy - set to integers
+power = 10
+energy = 100
 # Declare two variables - full_power AND full_energy
 #   full_power should multiply your current power by 500
 #   full_energy should add 150 to your current energy
+full_power = power * 500
+full_energy = energy + 150
 
 # Declare two variables - is_human and identity_concealed - assigned to booleans
+
+is_human = false
+identity_concealed = true
 
 
 # Declare two variables - arch_enemies AND sidekicks
 #   arch_enemies should be an array of at least 3 different enemy strings
 #   sidekicks should be an array of at least 3 different sidekick strings
-
+arch_enemies = ["Lex Luther", "Green Goblin", "Mega Superman"]
+sidekicks = ["Mini Superman", "Super Girl", "Iron Man"]
 # Print the first sidekick to your terminal
-
+print sidekicks[0]
 # Print the last arch_enemy to the terminal
-
+print arch_enemies[2]
 # Write some code to add a new arch_enemy to the arch_enemies array
-
+arch_enemies.append("Doc Oc")
 # Print the arch_enemies array to terminal to ensure you added a new arch_enemey
-
+print arch_enemies
 # Remove the first sidekick from the sidekicks array
-
+sidekicks.delete_at(0)
+print sidekicks
 # Print the sidekicks array to terminal to ensure you added a new sidekick
-
+sidekicks.append("Mini Superman")
+print sidekicks
 # Create a function called assess_situation that takes three arguments - danger_level, save_the_day, bad_excuse
 #   - danger_level should be an integer
-#   - save_the_day should be a string a hero would say once they save the day 
+#   - save_the_day should be a string a hero would say once they save the day
 #   - bad_excuse should be a string a hero would say if they are too afraid of the danger_level
-
+def assess_situation(danger_level)
+  save_the_day = "The day is saved!"
+  bad_excuse = "It's past my bedtime."
+    if danger_level.between?(10,50)
+      print save_the_day
+    elsif danger_level > 50
+      print bad_excuse
+    elsif danger_level < 10
+      print "Meh, hard pass."
+    end
+end
+assess_situation(40)
+assess_situation(9)
+assess_situation(1000)
 # Your function should include an if/else statement that meets the following criteria
 #   - Danger levels that are above 50 are too scary for your hero. Any danger level that is above 50 should result in printing the bad_excuse to the terminal
 #   - Anything danger_level that is between 10 and 50 should result in printing the save_the_day string to the terminal
@@ -55,17 +81,53 @@ excuse = 'I think I forgot to lock up my 1992 Toyota Coralla. Be right back.'
 #   - citiesDestroyed (array)
 #   - luckyNumbers (array)
 #   - address (hash with following key/values: number , street , state, zip)
-
+scary_monster = {
+  name: "Ted",
+  smell: "Stinky",
+  weight: 100,
+  citiesDestroyed: ["Denver", "Cheyenne", "Salt Lake"],
+  luckyNumbers: [1, 2, 3],
+  adress: {
+    number: 445,
+    streetName: "Pretzel",
+    zipCode: 80666
+  }
+}
 
 # Create a new class called SuperHero
+class SuperHero
+  attr_accessor :name, :super_power, :age, :arch_nemesis, :power_level, :energy_level
+  def initialize(name, super_power, age)
+    @name = name
+    @super_power = super_power
+    @age = age
+    @arch_nemesis = "The Syntax Error"
+    @power_level = 100
+    @energy_level = 50
+  end
+
+  def say_name
+    print name
+  end
+
+  def maximize_energy
+    energy_level = 1000
+    print energy_level
+  end
+
+  def gain_power(number)
+    print "New power level is #{power_level + number}."
+  end
+end
+
 # - Your class should have the following DYNAMIC values
-#   - name 
+#   - name
 #   - super_power
-#   - age 
+#   - age
 # - Your class should have the following STATIC values
 #   - arch_nemesis, assigned to "The Syntax Error"
 #   - power_level = 100
-#   - energy_level = 50 
+#   - energy_level = 50
 
 # - Create the following class methods
 #   - say_name, should print the hero's name to the terminal
@@ -73,12 +135,26 @@ excuse = 'I think I forgot to lock up my 1992 Toyota Coralla. Be right back.'
 #   - gain_power, should take an argument of a number and INCREASE the power_level by that number
 
 # - Create 2 instances of your SuperHero class
+superman = SuperHero.new("Superman", "flying", 50)
+superman.say_name
+superman.maximize_energy
+superman.gain_power(50)
 
+batman = SuperHero.new("Batman", "turn into bat", 55)
+batman.say_name
+batman.maximize_energy
+batman.gain_power(10)
 
 # Reflection
 # What parts were most difficult about this exerise?
+ # Functions and Classes were the most difficult, and the areas I need most practice on.
+
 
 # What parts felt most comfortable to you?
+# I feel very comfortable with variables, using all the data types (although hahes I could use practice on).
+
 
 # What skills do you need to continue to practice before starting Mod 1?
-
+#1. Functions
+#2. Classes
+#3. Hashes
