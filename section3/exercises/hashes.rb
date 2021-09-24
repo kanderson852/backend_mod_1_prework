@@ -8,7 +8,7 @@ foods = {apples: 23, grapes: 507, eggs: 48}
 puts foods
 
 # Write code that prints a hash holding zoo animal inventory:
-zoo = {'lions' => 3, 'tigers' => 7, 'bears' => 29}
+zoo = {lions: 3, tigers: 7, bears: 29}
 puts zoo
 
 # Write code that prints all of the 'keys' of the zoo variable

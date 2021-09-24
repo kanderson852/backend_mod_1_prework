@@ -20,7 +20,7 @@ A Hash is similar to an array in that it stores information in a list format. Ho
 
 1. In the space below, create a Hash stored to a variable named `pet_store`.  This hash should hold an inventory of items and the number of that item that you might find at a pet store.
 
-pet_store = {'dog_food' => 100, 'treats' => 88, 'toys' => 45}
+pet_store = {dog_food: 100, treats: 88, toys: 45}
 
 1. Given the following `states = {"CO" => "Colorado", "IA" => "Iowa", "OK" => "Oklahoma"}`, how would you access the value `"Iowa"`?
 
@@ -37,4 +37,4 @@ A good example of when to use a hash is when storing information to describe som
 
 1. What questions do you still have about hashes?
 
-I don't think I have questions, just feel a little shaky on writing them out so I will be getting more practice on these. 
+I don't think I have questions, just feel a little shaky on writing them out so I will be getting more practice on these.

@@ -64,8 +64,8 @@ puts food
 # YOU DO: Write code to add 3 new foods to the array.
   # There are several ways to do this - choose whichever you'd like!
 # Then, print the changed array to verify the new items have been added
-food << "pizza"
-food.push "burger"
+food << "pizza" #These are two ways of doing the same thing
+food.push "burger" #both add to the array
 food.push "sandwich"
 puts food
 # YOU DO: Remove the food that is in index position 0.
@@ -91,6 +91,6 @@ posts = ["image at beach", "holiday party", "adorable puppy", "video of cute bab
 # may be storing data? Come up with 3 examples - they could be from different web applications or
 # all from the same one.
 
-# 1: My friends list on Snapchat
-# 2: My browser search history
-# 3: The pictures in my Photos app
+#1. My friends list on Snapchat
+#2. My browser search history
+# 3. The pictures in my Photos app
