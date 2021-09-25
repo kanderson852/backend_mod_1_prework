@@ -31,11 +31,15 @@ In Mod 0 you've learned about different techniques for managing your time at Tur
 - [ ] Health + Wellness
 
 When you are finished, add screenshots of your calendar so we can provide feedback if needed!
+Ok so basically all my weeks look the same right now, I couldn't figure out how to change the dates on the mod1 calendar, because it's set to the current cohort and not mine. but I did download that calander to my own so when it is updated it will go into mine and overlay over where it says "class time" hopefully. So it looks like this on mine: 
+
+![1](https://i.stack.imgur.com/PZ6QC.jpg)
 
 - `Add Week 1 Screenshot Here`
 ![1](https://i.stack.imgur.com/BjyTb.jpg)
 - `Add Week 2 Screenshot Here`
 - `Add Week 3 Screenshot Here`
+- ![1](https://i.stack.imgur.com/St5wm.jpg)
 
 ### Mentorship Prep
 Mentorship is an integral part of the Turing experience and will help jumpstart your technical career. In order to get your mentor relationship started on the right foot, please complete the following deliverables:
